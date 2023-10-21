@@ -1,0 +1,58 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  body {
+    @apply font-primary text-white bg-theme font-normal leading-normal;
+  }
+}
+@layer components {
+  .btn-primary {
+    @apply px-[21px] py-3.5 text-[12.44px] font-primary flex items-center justify-center gap-[11px] uppercase leading-normal text-white border border-white/10 relative  h-12 hover:bg-white/10;
+  }
+  .btn-secondary {
+    @apply px-[21px] py-3.5 text-[12.44px] font-primary flex items-center justify-center gap-[11px] uppercase leading-normal text-white border border-white/10 relative  h-12 bg-white/10 hover:bg-transparent;
+  }
+
+  .box {
+    background-image: repeating-linear-gradient(
+        0deg,
+        #333333,
+        #333333 10px,
+        transparent 10px,
+        transparent 20px,
+        #333333 20px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        #333333,
+        #333333 10px,
+        transparent 10px,
+        transparent 20px,
+        #333333 20px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        #333333,
+        #333333 10px,
+        transparent 10px,
+        transparent 20px,
+        #333333 20px
+      ),
+      repeating-linear-gradient(
+        270deg,
+        #333333,
+        #333333 10px,
+        transparent 10px,
+        transparent 20px,
+        #333333 20px
+      );
+    background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
+  }
+}
